@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SuKienChuot</title>
+</head>
+<body>
+<form>
+    <img src="images/a.jpg" id="myImage"  width="300">
+    <p>Click button</p>
+    <input type="button" value="Click" onclick="moveRight()"/>
+
+</form>
+<script>
+    var imgObj = null;
+    imgObj = document.getElementById("myImage");
+    function init(){
+        imgObj= document.getElementById("myImage")
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function  moveRight(){
+        imgObj.style.left= parseInt(imgObj.style.left)+10+"px"
+    }
+    window.onload=init();git init
+</script>
+</body>
+</html>
