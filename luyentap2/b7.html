@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a= parseInt(prompt("nhap  a:"))
+let b= parseInt(prompt("nhap  b:"))
+let c= parseInt(prompt("nhap  c:"))
+let delta= b*b-4*a*c
+
+if(delta<0){
+    alert("pt vô nghiẻm")
+}else if(delta=0){
+    alert("pt ngiem kép"+-b/2*a)
+} else{
+    alert("pt có 2 nghiem pb:"+"x1="+(-b+Math.sqrt(delta))/a+"x2="+(-b-Math.sqrt(delta))/a)
+}
+</script>
+</body>
+</html>
