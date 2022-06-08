@@ -39,19 +39,19 @@
     </tr>
 </table>
 <script>
-    let view = document.getElementById("view");
+
 
     function inputValue(value){
 
-    view.value += value;
+        document.getElementById("view").value += value;
 }
 function result(){
-    let result = eval(view.value);
-    view.value =result;
+    let result = eval(document.getElementById("view").value);
+    document.getElementById("view").value =result;
 
 }
 function xoa(){
-    view.value="";
+    document.getElementById("view").value="";//value là giá trị chỉ input select .... mới dùng,
 }
 </script>
 
